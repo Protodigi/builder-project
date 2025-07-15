@@ -1,0 +1,53 @@
+.register-button {
+  display: flex;
+  width: 213px;
+  height: 50px;
+  padding: 7px 36px 9px 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--button-gradient);
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 149, 209, 0.3);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+.register-button span {
+  color: var(--text-white);
+  text-align: center;
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33.81px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .register-button {
+    width: 180px;
+    height: 45px;
+    padding: 7px 25px;
+  }
+
+  .register-button span {
+    font-size: 14px;
+    letter-spacing: 0.6px;
+  }
+}

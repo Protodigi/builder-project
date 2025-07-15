@@ -1,0 +1,29 @@
+:root {
+  --green-gradient: linear-gradient(0deg, #3fb7ab -22.73%, #bdf39d 100%);
+  --header-bg: #1e264e;
+  --button-gradient: linear-gradient(180deg, #e395d1 0%, #cb5e7e 100%);
+  --text-dark: #083544;
+  --text-blue: #4a81f5;
+  --text-white: #fff;
+  --text-highlight: #4f7ef2;
+  --text-pink: #f8bbea;
+}
+
+.webinar-landing {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 768px) {
+  .webinar-landing {
+    overflow-x: hidden;
+  }
+}

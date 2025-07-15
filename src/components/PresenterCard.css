@@ -1,0 +1,172 @@
+.presenter-card {
+  width: 440px;
+  height: 147px;
+  margin-top: 40px;
+}
+
+.presented-by {
+  display: block;
+  width: 119px;
+  height: 37px;
+  color: var(--text-pink);
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 126.3%;
+  margin-bottom: 12px;
+}
+
+.presenter-info {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.presenter-image-container {
+  position: relative;
+  width: 147px;
+  height: 141px;
+  transform: rotate(-90deg);
+}
+
+.presenter-background-circle {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background: var(--text-white);
+  box-shadow: 0px 13.493px 50.6px 0px rgba(75, 128, 247, 0.2);
+  backdrop-filter: blur(99.5px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.presenter-image {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.presenter-accent {
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 23px;
+  height: 23px;
+  transform: rotate(-90deg);
+}
+
+.presenter-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 276px;
+  height: 93px;
+}
+
+.presenter-name {
+  color: var(--text-white);
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 105%;
+  margin-bottom: 8px;
+}
+
+.presenter-title {
+  color: var(--text-white);
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 105%;
+}
+
+@media (max-width: 768px) {
+  .presenter-card {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .presenter-info {
+    gap: 15px;
+  }
+
+  .presenter-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .presenter-background-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .presenter-image {
+    width: 92px;
+    height: 92px;
+  }
+
+  .presenter-accent {
+    width: 18px;
+    height: 18px;
+  }
+
+  .presenter-details {
+    width: auto;
+    height: auto;
+  }
+
+  .presenter-name,
+  .presenter-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .presenter-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .presenter-image-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .presenter-background-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .presenter-image {
+    width: 72px;
+    height: 72px;
+  }
+
+  .presenter-name,
+  .presenter-title {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,95 @@
+.datetime-box {
+  width: 449px;
+  height: 77px;
+  margin: 30px 0;
+}
+
+.datetime-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 252px;
+  border: 1.4px solid var(--text-white);
+  box-shadow: 0px -14px 56px 0px rgba(20, 29, 79, 0.51);
+  backdrop-filter: blur(35px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.datetime-icon-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--text-white);
+  box-shadow: 0px -1px 56px 0px rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(35px);
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-icon {
+  fill: var(--text-dark);
+}
+
+.datetime-text {
+  margin-left: 17px;
+  color: var(--text-white);
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+@media (max-width: 768px) {
+  .datetime-box {
+    width: 350px;
+    height: 65px;
+  }
+
+  .datetime-icon-circle {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+
+  .datetime-text {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  .calendar-icon {
+    width: 20px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .datetime-box {
+    width: 280px;
+    height: 55px;
+  }
+
+  .datetime-icon-circle {
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+  }
+
+  .datetime-text {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .calendar-icon {
+    width: 15px;
+    height: 18px;
+  }
+}
